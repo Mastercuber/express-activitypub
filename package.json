@@ -10,7 +10,8 @@
     "express-basic-auth": "^1.1.5",
     "generate-rsa-keypair": "^0.1.2",
     "request": "^2.87.0",
-    "sqlite3": "^4.0.2"
+    "sqlite3": "^4.0.2",
+    "webfinger.js": "^2.7.0"
   },
   "engines": {
     "node": ">=10.10.0"
