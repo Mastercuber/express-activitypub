@@ -22,4 +22,13 @@ router.get('/:name', function (req, res) {
   }
 });
 
+router.get('/:name/inbox', (req, res, err) => {
+  const name = req.params.name
+  if (!name) {
+    return res.status(400).send('Bad request.');
+  } else {
+    console.log('no inbox logic!')
+  }
+});
+
 module.exports = router;
