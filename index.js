@@ -67,6 +67,6 @@ app.use('/.well-known/webfinger', cors(), routes.webfinger);
 app.use('/u', cors(), routes.user);
 app.use('/api/inbox', cors(), routes.inbox);
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(sslOptions, app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
